@@ -1,0 +1,119 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mode-selection {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.mode-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.mode-btn:hover {
+  background: #0056b3;
+}
+
+.box {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.action-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.create-btn {
+  background: #28a745;
+  color: white;
+}
+
+.create-btn:hover {
+  background: #218838;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deposit-btn {
+  background: #17a2b8;
+  color: white;
+}
+
+.deposit-btn:hover {
+  background: #117a8b;
+}
+
+.withdraw-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.withdraw-btn:hover {
+  background: #c82333;
+}
+
+.balance {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
