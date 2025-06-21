@@ -32,7 +32,7 @@ function App() {
             return;
         }
 
-        axios.post('https://smartbank-production-1da8.up.railway.app/create_account', {
+        axios.post('https://smartbanksys.netlify.app/create_account', {
             username,
             email,
             amount: parseInt(amount)
@@ -58,7 +58,7 @@ function App() {
             return;
         }
 
-        axios.post('https://smartbank-production-1da8.up.railway.app/update_balance', {
+        axios.post('https://smartbanksys.netlify.app/update_balance', {
             unique_id: uniqueId,
             action,
             amount: parseInt(amount)
@@ -76,7 +76,7 @@ function App() {
             return;
         }
 
-        axios.post('https://smartbank-production-1da8.up.railway.app/get_balance', { unique_id: uniqueId })
+        axios.post('https://smartbanksys.netlify.app/get_balance', { unique_id: uniqueId })
         .then(response => {
             setBalance(response.data.balance);
         })
@@ -90,7 +90,7 @@ function App() {
         }
 
         if (window.confirm("Are you sure you want to delete this account? This action cannot be undone.")) {
-            axios.post('https://smartbank-production-1da8.up.railway.app/delete_account', { unique_id: uniqueId })
+            axios.post('https://smartbanksys.netlify.app/delete_account', { unique_id: uniqueId })
             .then(response => {
                 alert(response.data.message);
                 setBalance(null);
